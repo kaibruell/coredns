@@ -1,0 +1,3 @@
+[submodule "plugin/ipblocker"]
+	path = plugin/ipblocker
+	url = https://github.com/kaibruell/ipblocker-coredns-plugin.git
