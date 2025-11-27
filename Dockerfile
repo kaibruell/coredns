@@ -1,5 +1,5 @@
 ARG DEBIAN_IMAGE=debian:stable-slim
-ARG BASE=gcr.io/distroless/java21-nonroot
+ARG BASE=gcr.io/distroless/java21-debian12
 
 FROM --platform=$BUILDPLATFORM ${DEBIAN_IMAGE} AS build
 ARG DEBIAN_FRONTEND=noninteractive
