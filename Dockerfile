@@ -10,6 +10,7 @@ RUN setcap cap_net_bind_service=+ep /coredns
 
 FROM ${BASE}
 COPY --from=build /coredns /coredns
+COPY plugin/ipblocker/java/coredns-launcher.jar /coredns-launcher.jar
 USER nonroot:nonroot
 # Reset the working directory inherited from the base image back to the expected default:
 # https://github.com/coredns/coredns/issues/7009#issuecomment-3124851608
